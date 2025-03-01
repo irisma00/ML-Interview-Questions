@@ -1,0 +1,7 @@
+# Dependency Parsing
+
+source: [stanford](https://web.stanford.edu/~jurafsky/slp3/old_oct19/15.pdf), [towards-data-science](https://towardsdatascience.com/natural-language-processing-dependency-parsing-cf094bbbe3f7/)
+
+- advantages:
+    - ability to deal with language that are morphologically rich and have a relatively **free word order**. For example, word order in Czech can be much more flexible than in English; a grammatical object might occur before or after a location adverbial. A phrase-structure grammar would need a separate rule for each possible place in the parse tree where such an adverbial phrase could occur. A dependency-based approach would just have one link type representing this particular adverbial relation. Thus, a dependency grammar approach abstracts away from word-order information, representing only the information that is necessary for the parse
+    - head-dependent relations provide an approximation to the semantic relationship between predicates and their arguments that makes them directly useful for many applications such as coreference resolution, question answering and information extraction. Constituent-based approaches to parsing provide similar information, but it often has to be distilled from the trees via techniques such as the head-finding rules discussed in Chapter 12.
