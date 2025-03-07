@@ -1,153 +1,9 @@
-# 13 NLP Interview Questions 2025
-A collection of technical interview questions for machine learning and natural language processing positions.
+# LLM Interview Questions 
 
-The answer to all of these question were generated using ChatGPT!
+source: [Devinterview-io/llms-interview-questions](https://github.com/Devinterview-io/llms-interview-questions/blob/main/README.md)
 
 
-### 1. What is the difference between stemming and lemmatization? [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-
-Stemming and lemmatization are both techniques used in natural language processing to reduce words to their base form. The main difference between the two is that stemming is a crude heuristic process that chops off the ends of words, while lemmatization is a more sophisticated process that uses vocabulary and morphological analysis to determine the base form of a word. Lemmatization is more accurate but also more computationally expensive.
-
-Example: The word "better"
-* Stemming: The stem of the word "better" is likely to be "better" (e.g. by using Porter stemmer)
-* Lemmatization: The base form of the word "better" is "good" (e.g. by using WordNetLemmatizer with POS tagger)
-
-
-<span style="color:blue"> 
-
-[more info](MLQuestions-NLP/1-stemming-lemmatization.md)
-
-</span>
-
-
-### 2. What do you know about Latent Semantic Indexing (LSI)? [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-Latent Semantic Indexing (LSI) is a technique used in NLP and information retrieval to extract the underlying meaning or concepts from a collection of text documents. LSI uses mathematical techniques such as Singular Value Decomposition (SVD) to identify patterns and relationships in the co-occurrence of words within a corpus of text. LSI is based on the idea that words that are used in similar context tend to have similar meanings.
-
-
-<span style="color:blue"> 
-
-[more info](MLQuestions-NLP/2-lsi)
-
-</span>
-
-### 3. What do you know about Dependency Parsing? [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-Dependency parsing is a technique used in natural language processing to analyze the grammatical structure of a sentence, and to identify the relationships between its words. It is used to build a directed graph where words are represented as nodes, and grammatical relationships between words are represented as edges. Each node has one parent and can have multiple children, representing the grammatical relations between the words.
-
-There are different algorithms for dependency parsing, such as the Earley parser, the CYK parser, and the shift-reduce parser. 
-
-
-
-
-<span style="color:blue"> 
-
-[more info](MLQuestions-NLP/3-dependency-parsing)
-
-</span>
-
-
-### 4. Name different approaches for text summarization. [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-There are several different approaches to text summarization, including:
-* Extractive summarization: Selects the most important sentences or phrases from the original text.
-* Abstractive summarization: Generates new sentences that capture the key concepts and themes of the original text.
-* Latent Semantic Analysis (LSA) based summarization: Uses LSA to identify the key concepts in a text.
-* Latent Dirichlet Allocation (LDA) based summarization: Uses LDA to identify the topics in a text.
-* Neural-based summarization: Uses deep neural networks to generate a summary.
-
-Each approach has its own strengths and weaknesses and the choice of the approach will depend on the specific use case and the quality of the summary desired.
-
-
-<span style="color:blue"> 
-
-[more info](MLQuestions-NLP/4-text-summarization)
-
-
-</span>
-
-### 5. What approach would you use for part of speech tagging? [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-There are a few different approaches that can be used for part-of-speech (POS) tagging, such as:
-* Rule-based tagging: using pre-defined rules to tag text
-* Statistical tagging: using statistical models to tag text
-* Hybrid tagging: Combining rule-based and statistical methods
-* Neural-based tagging: using deep neural networks to tag text
-
-### 6. Explain what is a n-gram model. [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-An n-gram model is a type of statistical language model used in NLP. It is based on the idea that the probability of a word in a sentence is dependent on the probability of the n-1 preceding words, where n is the number of words in the gram.
-
-The model represents the text as a sequence of n-grams, where each n-gram is a sequence of n words. The model uses the frequency of each n-gram in a large corpus of text to estimate the probability of each word in a sentence, based on the n-1 preceding words.
-
-### 7. Explain how TF-IDF measures word importance. [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-TF-IDF (Term Frequency-Inverse Document Frequency) is a statistical measure used to evaluate the importance of a word in a document or collection of documents. It is calculated as the product of the term frequency (TF) and the inverse document frequency (IDF) of a word.
-
-The term frequency (TF) of a word is the number of times the word appears in a document, normalized by the total number of words in the document.
-
-The inverse document frequency (IDF) of a word is the logarithm of the total number of documents in the corpus divided by the number of documents in which the word appears.
-
-
-### 8. What is perplexity used for? [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-Perplexity is a statistical measure used to evaluate the quality of a probability model, particularly language models. It is used to quantify the uncertainty of a model when predicting the next word in a sequence of words. The lower the perplexity, the better the model is at predicting the sequence of words. 
-
-Sure, here's the formula for perplexity in LaTeX format:
-
-Perplexity = $2^{H(D)}$
-
-$H(D) = - {\sum}_{i=1}^{N} {P(w_i)log_2{ P(w_i) }}$ [ref](https://en.wikipedia.org/wiki/Perplexity) 
-
-$w_i$ = the i-th word in the sequence
-
-$N$ = the number of words in the sequence
-
-$P(w_i)$ = the probability of the i-th word according to the model
-
-### 9. What is Bag-of-Worrds model? [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-The bag-of-words model is a representation of text data where a text is represented as a bag (multiset) of its words, disregarding grammar and word order but keeping track of the frequency of each word. It is simple to implement and computationally efficient, but it discards grammatical information and word order, which can be important for some NLP tasks.
-
-### 10. Explain how the Markov assumption affects the bi-gram model? [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-The Markov assumption is an important concept in the bi-gram model, it states that the probability of a word in a sentence depends only on the preceding word. The Markov assumption simplifies the bi-gram model by reducing the number of variables that need to be considered, making the model computationally efficient, but it also limits the context that the model takes into account, which can lead to errors in the probability estimates. In practice, increasing the order of the n-gram model can be used to increase the context taken into account, thus increasing the model's accuracy.
-
-### 11. What are the most common word embedding methods? explain each briefly. [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-Common word embedding methods include:
-* Count-based methods: Create embeddings by counting the co-occurrence of words in a corpus. Example: Latent Semantic Analysis (LSA)
-* Prediction-based methods: Create embeddings by training a model to predict a target word based on its surrounding context. Example: Continuous Bag-of-Words (CBOW) and Word2Vec
-* Hybrid methods: Combine both co-occurrence and context to generate embeddings. Example: GloVe (Global Vectors for Word Representation)
-* Neural Language Model based methods: Create embeddings by training a neural network-based language model on a large corpus of text. Example: BERT (Bidirectional Encoder Representations from Transformers)
-
-### 12. What are the first few steps that you will take before applying an NLP algorithm to a given corpus? [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-* Text pre-processing: Clean and transform the text into a format that can be processed by the model. Specific methods include: Removing special characters, lowercasing, removing stop words.
-
-* Tokenization: Break the text into individual words or phrases that can be used as input. Specific methods include: word tokenization, sentence tokenization, and n-gram tokenization.
-
-* Text normalization: Transform the text into a consistent format. Specific methods include: stemming, lemmatization.
-
-* Feature extraction: Select relevant features from the text to be used as input. Specific methods include: creating a vocabulary of the most common words in the corpus, creating a term-document matrix.
-
-* Splitting the data: Divide the data into training, validation and testing sets.
-
-* Annotating the data: Manually tag the data with relevant information. Specific methods include: POS tagging, NER tagging, and so on.
-
-### 13. List a few types of linguistic ambiguities. [[src]](https://www.projectpro.io/article/nlp-interview-questions-and-answers/439)
-* Lexical ambiguity: A word has multiple meanings. Example: "bass" can refer to a type of fish or a low-frequency sound.
-
-* Syntactic ambiguity: A sentence can be parsed in more than one way. Example: "I saw the man with the telescope" can mean that the speaker saw a man who had a telescope or the speaker saw a man through a telescope.
-
-* Semantic ambiguity: A word or phrase can have more than one meaning in a given context. Example: "bank" can refer to a financial institution or the edge of a river.
-
-* Pragmatic ambiguity: A sentence can have different interpretations depending on the speaker's intended meaning. Example: "I'm fine" can mean that the speaker is feeling well or that the speaker does not want to talk about their feelings.
-
-* Anaphora resolution: A pronoun or noun phrase refers to an antecedent with multiple possible referents.
-
-* Homonymy: Words that are written and pronounced the same but have different meanings. Example: "bass" as a type of fish and a low-frequency sound
-
-* Polysemy: words that have multiple meanings but are related in some way. Example: "bass" as a low-frequency sound and the bass guitar.
-
-
----
-# Questions Collected From [llms-interview-questions](https://github.com/Devinterview-io/llms-interview-questions/blob/main/README.md)
-
-
-
-#### You can also find all 63 answers here 👉 [Devinterview.io - LLMs](https://devinterview.io/questions/machine-learning-and-data-science/llms-interview-questions)
-
-<br>
+<!-- <br> -->
 
 ## 1. What are _Large Language Models (LLMs)_ and how do they work?
 
@@ -155,10 +11,11 @@ Common word embedding methods include:
 
 These models have revolutionized natural language processing tasks such as translation, summarization, and question-answering.
 
+
 ### Core Components and Operation
 
 #### Transformer Architecture
-LLMs are built on the **Transformer architecture**, which uses a network of transformer blocks with **multi-headed self-attention mechanisms**. This allows the model to understand the context of words within a broader text.
+LLMs are built on the **Transformer architecture**, which uses a network of transformer blocks with **multi-headed self-attention mechanisms**. This allows the model to **understand the context of words within a broader text**.
 
 ```python
 class TransformerBlock(nn.Module):
@@ -196,7 +53,7 @@ embeddings = outputs.last_hidden_state
 ```
 
 #### Self-Attention Mechanism
-This mechanism allows the model to focus on different parts of the input when processing each token, enabling it to capture complex relationships within the text.
+This mechanism allows the model to **focus on different parts of the input when processing each token**, enabling it to capture complex relationships within the text.
 
 ### Training Process
 
@@ -215,6 +72,16 @@ Different LLMs use various configurations of the encoder-decoder framework:
 - **GPT** models use a decoder-only architecture for unidirectional processing.
 - **BERT** uses an encoder-only architecture for bidirectional understanding.
 - **T5** (Text-to-Text Transfer Transformer) uses both encoder and decoder for versatile text processing tasks.
+
+
+
+<span style="color:blue"> 
+
+[more info](llms-interview-questions/1-llms.md)
+
+</span>
+
+
 <br>
 
 ## 2. Describe the architecture of a _transformer model_ that is commonly used in LLMs.
@@ -359,7 +226,7 @@ class FeedForward(nn.Module):
 
 ### Input Processing
 
-- **LLMs**: Can handle **variable-length inputs** and process text as sequences of tokens, often using subword tokenization methods like **Byte-Pair Encoding** (BPE) or **SentencePiece**.
+- **LLMs**: Can handle **variable-length inputs** and process text as sequences of tokens, often using subword tokenization methods like **Byte-Pair Encoding** ([BPE](https://huggingface.co/learn/nlp-course/en/chapter6/5)) or **SentencePiece**.
 - **Traditional models**: Often require **fixed-length inputs** or use simpler tokenization methods like word-level or character-level splitting.
 
 ### Contextual Understanding
@@ -376,6 +243,8 @@ class FeedForward(nn.Module):
 
 - **LLMs**: Require significant **computational resources** for training and inference, often necessitating specialized hardware like GPUs or TPUs.
 - **Traditional models**: Generally have **lower computational demands**, making them more suitable for resource-constrained environments.
+
+[more info](llm/llms-interview-questions/3-llm-vs-statistical-models.md)
 <br>
 
 ## 4. Can you explain the concept of _attention mechanisms_ in transformer models?
@@ -942,7 +811,7 @@ Large Language Models (LLMs) have revolutionized various industries with their v
 - **Vulnerability Analysis**: Specialized models can review code and identify potential security vulnerabilities.
 <br>
 
-## 12. How do LLMs contribute to the field of _sentiment analysis_?
+## 12. How do LLMs contribute to the field of _sentiment analysis_ ?
 
 **Large Language Models (LLMs)** have significantly advanced the field of sentiment analysis, offering powerful capabilities for understanding and classifying emotions in text.
 
@@ -1004,7 +873,7 @@ print(f"Predicted Sentiment: {predicted_sentiment}")
 ```
 <br>
 
-## 13. Describe how LLMs can be used in the _generation of synthetic text_.
+## 13. Describe how LLMs can be used in the _generation of synthetic text_ .
 
 **Large Language Models** (LLMs) are powerful tools for generating **coherent, context-aware synthetic text**. Their applications span from chatbots and virtual assistants to content creation and automated writing systems.
 
@@ -1084,7 +953,7 @@ def add_noise(sequence, noise_level):
 ```
 <br>
 
-## 14. In what ways can LLMs be utilized for _language translation_?
+## 14. In what ways can LLMs be utilized for _language translation_ ?
 
 Here are key ways **LLMs** can be utilized for translation tasks:
 
@@ -1167,7 +1036,7 @@ LLMs can be fine-tuned on domain-specific corpora to excel in translating techni
 LLMs can be used to evaluate and score translations, providing feedback on fluency and adequacy.
 <br>
 
-## 15. Discuss the _application_ of LLMs in _conversation AI_ and _chatbots_.
+## 15. Discuss the _application_ of LLMs in _conversation AI_ and _chatbots_ .
 
 **Large Language Models** (LLMs) have revolutionized the field of conversation AI, making chatbots more sophisticated and responsive. These models incorporate context, intent recognition, and semantic understanding, leading to more engaging and accurate interactions.
 
@@ -1238,10 +1107,35 @@ print(classify_intent(user_input))  # Output: "Positive"
 
 ## 16. Explain how LLMs can improve information retrieval and document summarization.
 
+**Understanding Context**: LLMs go beyond simply identifying keywords. They analyze the relationships between words and sentences, grasping the overall meaning and flow of the text.
+
+**Generating Summaries**: Instead of copying existing sentences, LLMs can paraphrase and rephrase key points, creating concise and coherent summaries. They can even generate entirely new summaries that capture the essence of the original text.
+
+**Adaptability**: LLMs can be fine-tuned for specific summarization tasks. Imagine summarizing news articles differently than scientific papers — LLMs can adapt their approach based on the type of text and desired outcome.
+
+[more info](https://medium.com/@singhrajni2210/large-language-models-and-text-summarization-a-powerful-combination-6400e7643b70#:~:text=Generating%20Summaries%3A%20Instead%20of%20copying,tuned%20for%20specific%20summarization%20tasks.)
+
 ---
 # Transformer Models and Variations
 
 ## 17. Describe the BERT (Bidirectional Encoder Representations from Transformers) model and its significance.
+
+Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. It is notable for its dramatic improvement over previous state-of-the-art models, and as an early example of a large language model. As of 2020, BERT is a ubiquitous baseline in natural language processing (NLP) experiments.
+
+BERT is trained by masked token prediction and next sentence prediction. As a result of this training process, BERT learns contextual, latent representations of tokens in their context, similar to ELMo and GPT-2. It found applications for many natural language processing tasks, such as coreference resolution and polysemy resolution. It is an evolutionary step over ELMo, and spawned the study of "BERTology", which attempts to interpret what is learned by BERT.
+
+### Architecture
+
+BERT is an "encoder-only" transformer architecture. At a high level, BERT consists of 4 modules:
+
+**Tokenizer**: This module converts a piece of English text into a sequence of integers ("tokens").
+**Embedding**: This module converts the sequence of tokens into an array of real-valued vectors representing the tokens. It represents the conversion of discrete token types into a lower-dimensional Euclidean space.
+**Encoder**: a stack of Transformer blocks with self-attention, but without causal masking.
+**Task head**: This module converts the final representation vectors into one-hot encoded tokens again by producing a predicted probability distribution over the token types. It can be viewed as a simple decoder, decoding the latent representation into token types, or as an "un-embedding layer".
+
+The task head is necessary for pre-training, but it is often unnecessary for so-called "downstream tasks," such as question answering or sentiment classification. Instead, one removes the task head and replaces it with a newly initialized module suited for the task, and finetune the new module. The latent vector representation of the model is directly fed into this new module, allowing for sample-efficient transfer learning.
+
+source: [wiki](https://en.wikipedia.org/wiki/BERT_(language_model))
 
 ## 18. Explain the core idea behind the T5 (Text-to-Text Transfer Transformer) model.
 
@@ -1321,7 +1215,71 @@ Develop a custom loss function for a transformer model that accounts for both fo
 
 ---
 # Model Evaluation and Management
-53. What metrics would you use to evaluate the performance of a fine-tuned LLM?
+## 53. What metrics would you use to evaluate the performance of a fine-tuned LLM?
+
+### Context-Specific Evaluation
+**Relevance**: Does the LLM provide information pertinent to the user’s query?
+**Hallucination**: Is the model prone to generating factually incorrect or illogical statements? Is the model prone to generating factually incorrect or illogical statements? What improvements can be made to reduce AI hallucinations?
+**Question-answering accuracy**: How effectively can the LLM handle direct user inquiries?
+**Toxicity**: Are the model outputs clear of offensive or harmful content?
+**Bleu score**: The BLEU (Bilingual Evaluation Understudy) score measures the similarity between a machine-generated text and a reference human translation. It evaluates how closely the machine output matches the human reference, often used in translation tasks.
+**Rouge score**: The ROUGE (Recall-Oriented Understudy for Gisting Evaluation) score is a set of metrics for evaluating automatic summarization and machine translations. It focuses on recall, assessing how much of the reference content is captured in the generated summary or translation.
+**Faithfulness**: Does the answers align with the role?
+
+### User Experience Metrics
+
+Beyond these primary metrics, evaluating the overall user experience is crucial. This involves assessing how intuitive and user-friendly the LLM is, which includes:
+
+**Response Time**: How quickly does the LLM generate responses?
+User Satisfaction: Are users satisfied with the interactions? This can be measured through feedback and engagement metrics.
+**Error Recovery**: How well does the LLM handle errors or misunderstandings? Effective error recovery mechanisms enhance user trust and reliability.
+
+### Model Evaluation Templates
+1. General
+2. TruthfulQA
+3. LLM-as-a-Judge
+
+
+### Applications of LLM Evaluation
+1. Performance Assessment
+2. Ground Truth Evaluation
+3. Model Comparison
+4. Bias Detection and Mitigation
+
+5. Comparative Analysis
+    - Accuracy (Task Success Rate): Measuring the model’s ability to produce correct responses to prompts
+    - Fluency (Perplexity): Assessing the natural flow and readability of text generated by the LLM
+    - Relevance (ROUGE Scores): Evaluating content relevance and alignment with user input
+    - Bias (Disparity Analysis): Identifying and mitigating biases within model responses
+    - Coherence (Coh-Metrix): 	Analyzing logical consistency and clarity over longer stretches of text
+
+### Benchmarking Steps for a Better Evaluation
+
+1. **Curate benchmark tasks:** Design a set of language tasks that cover a spectrum from simple to complex, ensuring the benchmark captures the breadth of LLM capabilities.
+2. **Prepare datasets:** Use diverse, representative datasets that have been carefully curated to avoid biases and evaluate the LLM’s performance on a level playing field.
+3. **Implement fine-tuning:** LLM fine-tuning techniques and LLM gateway using the prepared datasets to bolster the LLM’s ability to handle language tasks effectively.
+4. **Evaluate with metrics:** Utilize established evaluation metrics such as perplexity, ROUGE, and diversity to assess the performance of the LLM objectively.
+5. **Analyze results:** Interpret the data gathered to compare and contrast the performance of different LLMs, offering insights that could guide future improvements.
+
+
+**Perplexity:** Measures uncertainty in predicting the next token. (General language proficiency)
+**ROUGE:** Compares an LLM’s output with a set of reference summaries.	(Summarization tasks)
+**Diversity:** Evaluates the variety of responses generated.	(Creativity and variation in output)
+**Human Evaluation:** Subjective assessment by human judges.	(Relevance and coherence)
+
+
+### Important Metrics
+
+**Answer Relevancy:** Determines whether an LLM output is able to address the given input in an informative and concise manner.
+**Prompt Alignment:** Determines whether an LLM output is able to follow instructions from your prompt template.
+Correctness: Determines whether an LLM output is factually correct based on some ground truth.
+**Hallucination:** Determines whether an LLM output contains fake or made-up information.
+**Contextual Relevancy:** Determines whether the retriever in a RAG-based LLM system is able to extract the most relevant information for your LLM as context.
+**Responsible Metrics:** Includes metrics such as bias and toxicity, which determines whether an LLM output contains (generally) harmful and offensive content.
+**Task-Specific Metrics:** Includes metrics such as summarization, which usually contains a custom criteria depending on the use-case.
+
+source: [aisera](https://aisera.com/blog/llm-evaluation/#:~:text=How%20to%20evaluate%20fine%2Dtuned,model's%20effectiveness%20and%20generalization%20capabilities.), [confident-ai](https://www.confident-ai.com/blog/llm-evaluation-metrics-everything-you-need-for-llm-evaluation), [Medium1](https://ritikjain51.medium.com/llms-fine-tuning-and-evaluation-f019515b1c67), [huggingface](https://discuss.huggingface.co/t/how-can-i-evaluate-a-fine-tuned-llm/134538), [Medium2](https://medium.com/@arazvant/best-practices-when-evaluating-fine-tuned-llms-47f02f5164c2), [AWS](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-llms-finetuning-metrics.html)
+
 54. How would you conduct A/B testing for a new version of an LLM-based application?
 55. Explain model versioning strategies when updating LLMs in production.
 56. Describe a method to efficiently roll back to a previous LLM model state in case of failures.

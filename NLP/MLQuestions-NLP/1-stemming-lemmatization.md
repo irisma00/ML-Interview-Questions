@@ -1,3 +1,5 @@
+# Stemming & Lemmatization
+
 source: [IBM](https://www.ibm.com/think/topics/stemming-lemmatization): 
 
 - Stemming: The stemmer then removes any found suffix character strings from the word, should the latter not defy any rules or conditions attached to that suffix. Some stemmers (for example, Lovins stemmer) run the resulting stemmed bits through an additional set of rules to correct for malformed roots. The most widely used algorithm is the Porter stemming algorithm, and its updated version the Snowball stemmer. 

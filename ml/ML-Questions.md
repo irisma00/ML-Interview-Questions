@@ -1,7 +1,8 @@
 # 65 Machine Learning Interview Questions 2025
 A collection of technical interview questions for machine learning and computer vision engineering positions.
 
-### Recently added: [Natural Language Processing (NLP) Interview Questions 2025](https://github.com/andrewekhalel/MLQuestions/tree/master/NLP)
+source: [andrewekhalel/MLQuestions](https://github.com/andrewekhalel/MLQuestions)
+
 
 ## Preparation Resources
 1. [ML Engineer Interview Course](https://www.tryexponent.com/courses/ml-engineer?ref=zjgwmje&tap_s=5026306-8f044e)
